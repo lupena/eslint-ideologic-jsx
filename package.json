@@ -1,0 +1,24 @@
+{
+  "name": "ideologic-eslint",
+  "version": "1.0.0",
+  "description": "Rules & Styles for React Applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lupena/eslint-ideologic-jsx.git"
+  },
+  "keywords": [
+    "eslint",
+    "react",
+    "react-native"
+  ],
+  "author": "@lupena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lupena/eslint-ideologic-jsx/issues"
+  },
+  "homepage": "https://github.com/lupena/eslint-ideologic-jsx#readme"
+}
