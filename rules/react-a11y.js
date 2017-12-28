@@ -3,9 +3,6 @@ module.exports = {
     'jsx-a11y',
     'react'
   ],
-  ecmaFeatures: {
-    jsx: true
-  },
   rules: {
     // Enforce that anchors have content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
@@ -31,11 +28,11 @@ module.exports = {
 
     // disallow href "#"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/href-no-hash.md
-    'jsx-a11y/href-no-hash': [2, ['a']],
+    //'jsx-a11y/href-no-hash': [2, ['a']],
 
     // Require <img> to have a non-empty `alt` prop, or role="presentation"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-has-alt.md
-    'jsx-a11y/img-has-alt': 2,
+    //'jsx-a11y/img-has-alt': 2,
 
     // Prevent img alt text from containing redundant words like "image", "picture", or "photo"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
@@ -43,7 +40,7 @@ module.exports = {
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': [2, ['label']],
+    'jsx-a11y/label-has-for': [2, { "components": ["label"] }],
 
     // require that mouseover/out come with focus/blur, for keyboard-only users
     // TODO: evaluate
@@ -84,7 +81,7 @@ module.exports = {
 
     // ensure <hX> tags have content and are not aria-hidden
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
-    'jsx-a11y/heading-has-content': [2, ['']],
+    'jsx-a11y/heading-has-content': [2, { "components": [''] }],
 
     // require HTML elements to have a "lang" prop
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/html-has-lang.md
@@ -96,7 +93,7 @@ module.exports = {
 
     // prevent marquee elements
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-marquee.md
-    'jsx-a11y/no-marquee': 2,
+    //'jsx-a11y/no-marquee': 2,
 
     // only allow <th> to have the "scope" attr
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md
