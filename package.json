@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ideologic",
-  "version": "1.0.0",
+  "version": "2.5.0",
   "description": "Rules & Styles for React Applications.",
   "main": "index.js",
   "scripts": {
